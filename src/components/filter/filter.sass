@@ -1,0 +1,27 @@
+.Collapsible__trigger
+    display: block
+    padding: 0 20px
+    background: #EFEFEF
+    line-height: 50px
+    cursor: pointer
+
+.Collapsible__contentInner
+    li
+        position: relative
+        padding: 0 0 0 40px
+        line-height: 40px
+        cursor: pointer
+        &:hover
+            background: #EFEFEF
+        &:before
+            content: ''
+            position: absolute
+            left: 12px
+            top: 12px
+            display: none
+            width: 15px
+            height: 15px
+            background: #434343
+            border-radius: 50%
+        &.active:before
+            display: block

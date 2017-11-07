@@ -1,16 +1,22 @@
 import React from 'react';
-import axios from 'axios';
+
+import Header from './header/Header';
+import Main from './main/Main';
+import Sidebar from './sidebar/Sidebar';
+
+import 'normalize.css';
+import './app.sass';
 
 
 export default class App extends React.Component {
-	componentDidMount() {
-		axios.get('/api')
-	}
-
     render() {
         return (
             <div>
-                <h1>Hello world!!</h1>
+                <Header />
+                <div className="wrapper">
+                    <Main />
+                    <Sidebar />
+                </div>
             </div>
         )
     }
