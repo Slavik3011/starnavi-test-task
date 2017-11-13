@@ -61,14 +61,16 @@ class Gallery extends React.Component {
             let postSize = 'Large';
             if(1200 <= post.width && post.width < 2200) postSize = 'Medium';
             if(post.width < 1200) postSize = 'Small';
-            return author == post.author || author == '' && size == '' || size == postSize
+
+            return (author == post.author || author == '') && (size == '' || size == postSize)
         });
 
         let maxPages = Math.ceil(filteredGallery.length/showPosts);
 
         this.setState({
-            filteredGallery: filteredGallery
+            filteredGallery
         });
+        console.log(author)
 
         setMaxPage(maxPages);
         setCountPosts(filteredGallery.length)
