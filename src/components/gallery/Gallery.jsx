@@ -70,7 +70,6 @@ class Gallery extends React.Component {
         this.setState({
             filteredGallery
         });
-        console.log(author)
 
         setMaxPage(maxPages);
         setCountPosts(filteredGallery.length)
