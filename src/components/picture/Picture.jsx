@@ -39,17 +39,3 @@ export default class Picture extends React.Component {
         )
     }
 }
-
-// export default ({ src, id, activePicture, setActivePicture }) => {
-//     const setActive = () => {
-//         setActivePicture(id);
-//     };
-//
-//     return (
-//         <li className={ `picture ${id == activePicture ? 'active' : ''}`}>
-//             <div>
-//                 <img src={src} onClick={setActive}/>
-//             </div>
-//         </li>
-//     )
-// };
